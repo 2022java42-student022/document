@@ -1,0 +1,15 @@
+リンクの移動が<a href
+アクションが<form　
+
+「管理者」
+
+教科書検索
+検索：<form action ="/TextServlet?action=search" method="post">
+→/textSearchResult.jsp
+戻る：<a href="/Login/top.html?action=back">戻る</a>
+
+教科書検索結果
+削除：<form action="/TextServlet?" method="post">
+→/textDelete.jsp
+登録内容変更：<form action="/TextServlet?" method="post">
+→/textRegister.jsp
