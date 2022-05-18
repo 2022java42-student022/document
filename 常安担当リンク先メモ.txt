@@ -1,0 +1,90 @@
+ログイン画面
+
+会員でログイン
+form action="/textbook/LoginServlet"
+select name="login"
+option value="member"
+→/memHome.jsp
+
+管理者でログイン：
+form action="/textbook/LoginServlet"
+select name="login"
+option value="manager"
+→/mgHome.jsp
+
+初めての方はこちら：
+a href="/memRegister.jsp"
+
+
+会員画面
+
+教科書の検索：
+a href="/textSearch.jsp"
+
+教科書の登録：
+a href="/textRegister.jsp"
+
+登録済み教科書参照：
+a href="/showMyText.jsp"
+
+会員情報の変更：
+a href="/memChange.jsp"
+
+会員の退会：
+a href="/memDelete.jsp"
+
+
+会員変更画面
+
+送信：
+form action="/textbook/MemberServlet?action=change"
+→/memChangeConfirmation.jsp
+
+会員登録画面
+
+送信：
+form action="/textbook/MemberServlet?action=register"
+→/memRegisterConfirmation.jsp
+
+
+会員登録確認画面
+
+送信：
+form action="/textbook/MemberServlet?action=registerConfirm"
+→/complete.jsp
+
+戻る：
+a href="/memRegister.jsp"
+
+
+会員変更確認画面
+
+送信：
+form action="/textbook/MemberServlet?action=changeConfirm"
+→/complete.jsp
+
+戻る：
+a href="/memChange.jsp"
+
+
+会員退会画面
+
+送信：
+form action="/textbook/MemberServlet?action=delete"
+→/memDeleteConfirmation
+
+戻る：
+→/memHome.jsp
+
+
+会員退会確認画面
+
+決定：
+form action="/textbook/MemberServlet?action=deleteConfirm"
+
+戻る：
+a href="/memDelete.jsp"
+
+
+
+/textbook/TextServlet→
