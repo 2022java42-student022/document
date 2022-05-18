@@ -1,0 +1,74 @@
+2022java42-student016@la-study.com
+
+REh#Fv5U
+
+
+mgHome.jsp
+管理者HOME
+
+教科書の検索:
+<a href="/textSearch.jsp">
+
+教科書の変更:
+<a href="/textChange.jsp">
+
+教科書の削除:
+<a href="/textDelete.jsp">
+
+会員の検索:
+<a href="/memSearch.jsp">
+
+会員の変更:
+<a href="/memChange.jsp">
+
+会員の退会:
+<a href="/memDelete.jsp">
+
+
+memSearch.jsp
+（管理者）会員検索
+
+<form action="/textbook/MemberServlet?
+action=search"
+→/memSearchResult.jsp
+
+
+memSearchResult.jsp
+（管理者）検索結果
+
+<form action="/textbook/MemberServlet?
+action=change"
+→/memChange.jsp
+
+
+
+memChange.jsp
+（管理者）会員情報変更
+
+<form action="/textbook/MgServlet?
+action=change"
+→/memRegisterConfirmation.jsp
+
+
+
+memRegisterConfirmation.jsp
+確認画面
+
+<form action="/textbook/MgServlet?
+action=change"
+→/complete.jsp
+
+
+
+complete.jsp
+完了画面
+
+<form action="/textbook/MgServlet?
+action=change"
+→/mgHome.jsp
+
+
+
+
+
+
