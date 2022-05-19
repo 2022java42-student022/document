@@ -4,57 +4,88 @@
 form action="/textbook/LoginServlet"
 select name="login"
 option value="member"
-→/memHome.jsp
+→/Login/memHome.jsp
 
 管理者でログイン：
 form action="/textbook/LoginServlet"
 select name="login"
 option value="manager"
-→/mgHome.jsp
+→/Login/mgHome.jsp
 
 初めての方はこちら：
-a href="/memRegister.jsp"
+a href="/Member/memRegister.jsp"
 
 
 会員画面
 
 教科書の検索：
-a href="/textSearch.jsp"
+a href="/Text/textSearch.jsp"
 
 教科書の登録：
-a href="/textRegister.jsp"
+a href="/Text/textRegister.jsp"
 
 登録済み教科書参照：
-a href="/showMyText.jsp"
+a href="/Text/showMyText.jsp"
 
 会員情報の変更：
-a href="/memChange.jsp"
+a href="/Member/memChange.jsp"
 
 会員の退会：
-a href="/memDelete.jsp"
+a href="/Member/memDelete.jsp"
 
-
-会員変更画面
-
-送信：
-form action="/textbook/MemberServlet?action=change"
-→/memChangeConfirmation.jsp
 
 会員登録画面
 
 送信：
-form action="/textbook/MemberServlet?action=register"
-→/memRegisterConfirmation.jsp
+form action="/textbook/MemberServlet?action=preRegister"
+→/Member/memRegisterConfirmation.jsp
 
 
 会員登録確認画面
 
 送信：
-form action="/textbook/MemberServlet?action=registerConfirm"
-→/complete.jsp
+form action="/textbook/MemberServlet?action=register"
+→/Complete/registerComplete.jsp
 
 戻る：
-a href="/memRegister.jsp"
+a href="/Member/memRegister.jsp"
+
+
+登録完了画面
+ホームに戻る：
+a href="/Member/memHome.jsp"
+
+
+会員退会画面
+
+送信：
+form action="/textbook/MemberServlet?action=preDelete"
+→/Member/memDeleteConfirmation.jsp
+
+戻る：
+→/Login/memHome.jsp
+
+
+会員退会確認画面
+
+決定：
+form action="/textbook/MemberServlet?action=delete"
+→/Complete/memberComplete.jsp
+
+戻る：
+a href="/memDelete.jsp"
+
+
+
+
+ティン
+
+会員変更画面
+
+送信：
+form action="/textbook/MemberServlet?action=change"
+→/Member/memChangeConfirmation.jsp
+
 
 
 会員変更確認画面
@@ -64,27 +95,5 @@ form action="/textbook/MemberServlet?action=changeConfirm"
 →/complete.jsp
 
 戻る：
-a href="/memChange.jsp"
+a href="/Member/memChange.jsp"
 
-
-会員退会画面
-
-送信：
-form action="/textbook/MemberServlet?action=delete"
-→/memDeleteConfirmation
-
-戻る：
-→/memHome.jsp
-
-
-会員退会確認画面
-
-決定：
-form action="/textbook/MemberServlet?action=deleteConfirm"
-
-戻る：
-a href="/memDelete.jsp"
-
-
-
-/textbook/TextServlet→
