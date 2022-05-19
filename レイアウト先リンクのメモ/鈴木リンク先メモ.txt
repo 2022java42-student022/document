@@ -1,3 +1,21 @@
+＜会員＞
+〇教科書検索
+検索：<form action = "/TextServlet?action=search" method="post">
+戻る：&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="button" name="button_test" value="戻る" onclick="javascript:history.back()">
+
+〇検索結果
+追加：<form action="/textbook/CartServlet?action=add" method="post">
+カートを見る：&nbsp;&nbsp;&nbsp;&nbsp; <!-- JavaScript -->
+<input type="button" name="button_test" value="カートを見る" onclick="javascript:location.href='/textbook/cart/cart.jsp'">
+戻る：戻る：&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" name="button_test" value="戻る" onclick="javascript:history.back()">
+
+〇カートの中身
+教科書検索：<a href="/textbook/Text/textSearchMember.jsp">教科書検索</a>
+カートの確認：<a href="/textbook/cart/cart.jsp">カートの確認</a>
+戻る：<a href="/textbook//Member/memSearchResult.jsp">戻る</a>
+
 〇お客様情報入力画面
 <form action = "/textbook/OrderServlet?action=confirm" method = "post">
 
