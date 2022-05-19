@@ -1,0 +1,8 @@
+〇お客様情報入力画面
+<form action = "/textbook/OrderServlet?action=confirm" method = "post">
+
+〇お客様情報確認画面
+<form action = "/textbook/OrderServlet?action=order" method = "post">
+
+〇注文完了画面
+<a href = "/memHome.jsp">HOMEへ戻る</a>
