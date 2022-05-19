@@ -30,7 +30,7 @@ memSearch.jsp
 
 <form action="/textbook/MemberServlet?
 action=search"
-→/memSearchResult.jsp
+→/Member/memSearchResult.jsp
 
 
 memSearchResult.jsp
@@ -38,7 +38,7 @@ memSearchResult.jsp
 
 <form action="/textbook/MemberServlet?
 action=change"
-→/memChange.jsp
+→/Member/memChange.jsp
 
 
 
@@ -46,8 +46,8 @@ memChange.jsp
 （管理者）会員情報変更
 
 <form action="/textbook/MgServlet?
-action=change"
-→/memRegisterConfirmation.jsp
+action=preChange"
+→/Member/memRegisterConfirmation.jsp
 
 
 
@@ -56,17 +56,14 @@ memRegisterConfirmation.jsp
 
 <form action="/textbook/MgServlet?
 action=change"
-→/complete.jsp
+→/Complete/mgComplete.jsp
 
 
 
 complete.jsp
 完了画面
 
-<form action="/textbook/MgServlet?
-action=change"
-→/mgHome.jsp
-
+<a href="/Login/mgHome.jsp">
 
 
 
