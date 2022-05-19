@@ -22,4 +22,11 @@
 ↓
 /textbook/Login/mgHome.jsp
 
-あ
+【登録済教科書参照画面】
+登録内容変更
+<form action="/textbook/TextServlet?action=reference" method="post">
+↓
+/Text/textChange.jsp
+
+戻る
+/Login/memHome.jsp
