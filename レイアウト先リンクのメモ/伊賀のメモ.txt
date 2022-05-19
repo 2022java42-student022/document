@@ -1,0 +1,25 @@
+【教科書削除画面】
+削除
+<form action="/textbook/TextServlet?action=preDelete" method="post">
+↓
+/Text/textDeleteConfirmation.jsp
+
+戻る
+/Text/textSearchConfirmation.jsp
+
+【教科書削除確認画面】
+決定
+<form action="/textbook/TextServlet?action=delete" method="post">
+↓
+/Complete/mgComplete.jsp
+
+戻る
+/Text/textDelete.jsp
+
+【完了画面】
+ホームに戻る
+<form action="/textbook/TextServlet?action=return" method="post">
+↓
+/textbook/Login/mgHome.jsp
+
+あ
