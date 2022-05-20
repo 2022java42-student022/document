@@ -1,0 +1,6 @@
+CREATE TABLE CART (
+    order_id SERIAL PRIMARY KEY,
+    order_date DATE NOT NULL,
+    user_id INTEGER NOT NULL,
+    text_id INTEGER NOT NULL
+);
