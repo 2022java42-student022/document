@@ -1,0 +1,9 @@
+CREATE TABLE member (
+user_id SERIAL PRIMARY KEY,
+name VARCHAR (100)NOT NULL,
+email  VARCHAR (100),
+pass VARCHAR (100),
+address VARCHAR (100),
+tel_no  VARCHAR(100),
+pay VARCHAR (100)
+);
