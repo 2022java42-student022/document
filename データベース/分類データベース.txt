@@ -1,0 +1,17 @@
+CREATE TABLE sort (
+sort_id SERIAL PRIMARY KEY,
+dep_name VARCHAR(100) NOT NULL
+);
+
+INSERT INTO sort(dep_name) VALUES('文学部');
+INSERT INTO sort(dep_name) VALUES('教育学部');
+INSERT INTO sort(dep_name) VALUES('法学部');
+INSERT INTO sort(dep_name) VALUES('社会学部');
+INSERT INTO sort(dep_name) VALUES('経済学部');
+INSERT INTO sort(dep_name) VALUES('理学部');
+INSERT INTO sort(dep_name) VALUES('医学部');
+INSERT INTO sort(dep_name) VALUES('歯学部');
+INSERT INTO sort(dep_name) VALUES('薬学部');
+INSERT INTO sort(dep_name) VALUES('工学部');
+INSERT INTO sort(dep_name) VALUES('農学部');
+ALTER TABLE sort OWNER TO student;
