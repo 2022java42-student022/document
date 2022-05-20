@@ -1,0 +1,5 @@
+CREATE TABLE CART_detail (
+    text_id INTEGER KEY,
+    order_id INTEGER NOT NULL,
+    user_id INTEGER NOT NULL,
+);
