@@ -1,0 +1,6 @@
+CREATE TABLE manager (
+management_id SERIAL PRIMARY KEY,
+email VARCHAR(100) NOT NULL,
+pass VARCHAR(100)) NOT NULL; 
+
+INSERT INTO manager(email, pass)VALUES('mitobeting1004@gmail.com', '1314520');
