@@ -1,0 +1,15 @@
+/textSearchResultMember.jsp
+c:forEach items="${texts}}" var="text"
+
+
+/CartServlet
+int text_id = Integer.parseInt(request.getParameter("text_id"));
+
+TextBean bean = dao.findByPrimaryKey(text_id);
+
+
+/CartBean
+TextBean getText_id()
+
+/cart.jsp
+form action="/textbook/OrderServlet?action=input_member"
