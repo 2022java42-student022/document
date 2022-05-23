@@ -1,5 +1,5 @@
 CREATE TABLE ordered_detail (
-    text_id INTEGER KEY,
+    text_id INTEGER NOT NULL,
     order_id INTEGER NOT NULL,
-    user_id INTEGER NOT NULL,
+    user_id INTEGER NOT NULL
 );
