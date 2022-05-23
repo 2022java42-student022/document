@@ -1,4 +1,4 @@
-CREATE TABLE CART_detail (
+CREATE TABLE ordered_detail (
     text_id INTEGER KEY,
     order_id INTEGER NOT NULL,
     user_id INTEGER NOT NULL,
