@@ -6,3 +6,7 @@ CREATE TABLE ordered (
 );
 
 ALTER TABLE ordered ALTER COLUMN order_id INTEGER;
+
+DROP SEQUENCE ordered_order_id_seq;
+
+CREATE SEQUENCE ordered_order_id_seq;
