@@ -4,3 +4,5 @@ CREATE TABLE ordered (
     user_id INTEGER NOT NULL,
     total INTEGER NOT NULL
 );
+
+ALTER TABLE ordered ALTER COLUMN order_id INTEGER;
